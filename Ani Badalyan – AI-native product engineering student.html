@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ani Badalyan – AI-native product engineering student</title>
+<meta name="description" content="Ani Badalyan is studying AI-native product engineering and builds products from scratch.">
+<style>
+:root{--display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;--text-font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--bg:#f8f2ec;--surface:#fcf9f5;--text:#3b2a24;--muted:#6f564c;--line:#e6d8cc;--brown:#c9a58f;--accent:#4f6b57;--soft:#e4ece3;--soft-ink:#4f6b57;--yellow:#efdcd6;--yellow-ink:#8a4b52;--pink:#c8dccb;--ink:#263b2c;--on-accent:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#211a16;--surface:#2c231e;--text:#f6ece6;--muted:#cdb8ab;--line:#4d3d34;--brown:#7a5f50;--accent:#b9d4bf;--soft:#2a3a2f;--soft-ink:#b9d4bf;--yellow:#3d2a2c;--yellow-ink:#f0c9c9;--pink:#a9c8b0;--ink:#1c2e21;--on-accent:#1c2e21}}
+:root[data-theme="dark"]{--bg:#211a16;--surface:#2c231e;--text:#f6ece6;--muted:#cdb8ab;--line:#4d3d34;--brown:#7a5f50;--accent:#b9d4bf;--soft:#2a3a2f;--soft-ink:#b9d4bf;--yellow:#3d2a2c;--yellow-ink:#f0c9c9;--pink:#a9c8b0;--ink:#1c2e21;--on-accent:#1c2e21}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:light dark;scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--text);font:1.0625rem/1.7 var(--text-font)}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0 0 1rem;font-weight:600;letter-spacing:-.02em}
+h1{font-size:clamp(2.6rem,10vw,5.2rem);letter-spacing:-.035em}
+h2{font-size:clamp(1.9rem,6vw,2.8rem)}h3{font-size:clamp(1.5rem,4vw,2rem)}
+p{margin:0 0 1rem;max-width:58ch}
+a{color:var(--accent);text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+ul{list-style:none;padding:0;margin:0}
+.wrap{width:min(100% - 2.5rem,64rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--on-accent);padding:.5rem 1rem;z-index:30}.skip:focus{left:0}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+.brand{font-family:var(--display);font-size:1.2rem;font-weight:600;color:var(--text);text-decoration:none}
+nav ul{display:flex;gap:1.5rem;align-items:center}
+nav a{color:var(--text);text-decoration:none;font-weight:500}nav a:hover{color:var(--accent)}
+.pill{font:inherit;color:var(--text);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;min-height:2.75rem;cursor:pointer;transition:border-color .15s}
+.pill:hover{border-color:var(--accent)}
+.menu-btn{display:none}
+@media(max-width:40rem){.menu-btn{display:inline-block}.js nav ul{display:none;flex-direction:column;align-items:flex-start;position:absolute;left:0;right:0;top:100%;background:var(--bg);padding:1rem 1.25rem 1.5rem;border-bottom:1px solid var(--line)}.js nav ul.open{display:flex}}
+.hero{display:grid;gap:3rem;align-items:center;padding-block:5rem 3rem}
+.hero .kicker{font-weight:600;color:var(--accent);margin-bottom:1rem}
+.lead{font-size:1.25rem;color:var(--muted);max-width:42ch;margin-top:1.5rem}
+.actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.5rem}
+.btn{display:inline-block;padding:.85rem 1.6rem;border-radius:999px;background:var(--pink);color:var(--ink);text-decoration:none;font-weight:600;border:2px solid var(--pink);transition:background-color .15s,color .15s}
+.btn:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent);border-color:var(--accent)}.btn.ghost:hover{background:var(--pink);color:var(--ink);border-color:var(--pink)}
+.mono{justify-self:start;width:min(70vw,17rem);aspect-ratio:1;border-radius:50%;background:var(--pink);color:var(--ink);display:grid;place-items:center;font-family:var(--display);font-size:clamp(4rem,16vw,6.5rem);font-weight:600;letter-spacing:-.05em;box-shadow:none}
+@media(min-width:48rem){.hero{grid-template-columns:1.6fr 1fr;padding-block:7rem 5rem}.mono{justify-self:end}}
+section.block{padding-block:4rem}
+.project{display:grid;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.pmark{background:var(--yellow);color:var(--yellow-ink);display:grid;place-items:center;min-height:11rem;font-family:var(--display);font-size:4.5rem;font-weight:600;letter-spacing:-.04em}
+.pbody{padding:1.75rem}
+.meta{color:var(--muted);font-size:.95rem}
+.steps{display:grid;gap:1.5rem;margin-top:1.5rem}
+.step{border-left:3px solid var(--brown);padding-left:1.25rem}
+.step h4{margin:0 0 .25rem;font-family:var(--display);font-size:1.2rem}.step p{margin:0;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:1.5rem;font-weight:600;margin-top:1.5rem}
+@media(min-width:48rem){.project{grid-template-columns:15rem 1fr}.pmark{min-height:100%}.steps{grid-template-columns:1fr 1fr}}
+.contact{background:var(--soft);border-radius:16px;padding:3rem 1.75rem;display:grid;gap:1.5rem}
+.contact p{color:var(--muted);margin:0 0 .5rem}
+.email{font-family:var(--display);font-size:clamp(1.3rem,5.5vw,2.2rem);color:var(--text);overflow-wrap:anywhere}.email:hover{color:var(--accent)}
+@media(min-width:48rem){.contact{grid-template-columns:1fr auto;align-items:center;padding:3.5rem}}
+footer{border-top:1px solid var(--line);margin-top:4rem;padding-block:1.5rem;color:var(--muted);font-size:.95rem}footer p{margin:0;max-width:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap">
+<a class="brand" href="#top">Ani Badalyan</a>
+<button class="pill menu-btn" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<nav aria-label="Main"><ul id="links">
+<li><a href="#work">Work</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><button class="pill" id="theme" type="button">Theme</button></li>
+</ul></nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap hero" id="top">
+<div>
+<p class="kicker">Ani Badalyan</p>
+<h1>Learning AI-native product engineering.</h1>
+<p class="lead">I am studying AI-native product engineering and learn by building real products from scratch. My first one is a website for posting lost people and pets.</p>
+<div class="actions"><a class="btn" href="#work">Work</a><a class="btn ghost" href="#contact">Contact</a></div>
+</div>
+<div class="mono" aria-hidden="true">AB</div>
+</div>
+
+<section class="block wrap" id="work" aria-labelledby="work-h">
+<h2 id="work-h">Selected work</h2>
+<article class="project">
+<div class="pmark" aria-hidden="true">FL</div>
+<div class="pbody">
+<h3>Find the Lost</h3>
+<p class="meta">Designed and built by Ani Badalyan</p>
+<p>A website where people can post a lost person or pet with a photo, details and where they were lost. I built it myself from scratch.</p>
+<div class="steps">
+<div class="step"><h4>Problem</h4><p>When a person or pet goes missing, their family needs one place to share a photo, key details and where they were last seen.</p></div>
+<div class="step"><h4>Approach</h4><p>Each post holds a photo, information about the person or pet, and where they were lost.</p></div>
+</div>
+<div class="links"><a href="https://7002nayladabina-cmyk.github.io/findthelost/">Open live site</a><a href="https://github.com/7002nayladabina-cmyk">GitHub</a></div>
+</div>
+</article>
+</section>
+
+<section class="block wrap" id="contact" aria-labelledby="contact-h">
+<div class="contact">
+<div>
+<h2 id="contact-h">Contact</h2>
+<p>The fastest way to reach me is email.</p>
+<a class="email" href="mailto:7002nayladabina@gmail.com">7002nayladabina@gmail.com</a>
+</div>
+<a class="btn" href="https://github.com/7002nayladabina-cmyk">GitHub</a>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><p>© Ani Badalyan</p></div></footer>
+<script>
+(function(){var r=document.documentElement;r.classList.add('js');
+try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+document.getElementById('theme').addEventListener('click',function(){
+var d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+var n=d?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}});
+var b=document.getElementById('menu'),l=document.getElementById('links');
+b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});
+l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+})();
+</script>
+</body>
+</html>
